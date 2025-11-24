@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: yoyoxcloud-telegram-bot
+    env: python
+    region: frankfurt
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: ADMIN_USERNAME
+        value: AraboMardelli
+      - key: ADMIN_PASSWORD
+        value: AraboKing336
