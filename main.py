@@ -4,9 +4,14 @@ YoYoXcloud Premium Inboxer Bot - Main Entry Point
 """
 import sys
 import os
-from dotenv import load_dotenv
 
-# Load environment variables from .env file
+# SET ENV VARS FIRST - BEFORE ANYTHING ELSE!
+os.environ['TELEGRAM_BOT_TOKEN'] = '8542557681:AAF42OpFf2nHY4Rl6l0jkjRUDI9wb-DAcus'
+os.environ['ADMIN_USERNAME'] = 'AraboMardelli'
+os.environ['ADMIN_PASSWORD'] = 'AraboKing336'
+
+# NOW load dotenv
+from dotenv import load_dotenv
 load_dotenv()
 
 # Add scr to Python path
